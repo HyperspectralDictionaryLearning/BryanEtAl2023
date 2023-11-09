@@ -114,7 +114,7 @@ def fit_spectrum(lamb_data,spec_data,lamb_D,D,zinput=False):
 Ngal = len(ztrue)
 
 # assume as a calibration we are given the true redshifts of some well-studied reference galaxies
-# select these at random and rescale the best-fit redshifts by this at the end of each iteration
+# select these at random
 Ncalibrators = 50
 from numpy.random import default_rng
 rng = default_rng()
