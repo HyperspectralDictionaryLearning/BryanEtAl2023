@@ -94,9 +94,6 @@ def fit_spectrum(lamb_data,spec_data,lamb_D,D,zinput=False):
 
         # return the redshift with the lowest residual
         z = ztrial[kbest]
-
-        #from IPython import embed
-        #embed()
     else:
         z = zinput
 
