@@ -125,8 +125,6 @@ Niterations = 10
 resid_array = np.zeros(Niterations+1)
 for i_iter in range(Niterations):
     print(str(i_iter)+' of '+str(Niterations)+' iterations')
-    #resid = np.subtract(spec_obs[:],model) # sean commented these out, let's fix these later?
-    #resid_array[i_iter] = np.abs(np.sum(resid))
     # go over the calibrator galaxies first N times to get some higher-quality dictionary updates first
     # then go over all the galaxies
     galaxies_to_evaluate = np.append(np.tile(i_calibrator_galaxies,Niterations),np.arange(Ngal).astype('int'))
