@@ -49,7 +49,7 @@ D_rest = np.vstack((np.interp(lamb_rest*10000,df1['lambda_ang'],df1['flux']/np.s
 D_rest_initial = D_rest.copy()
 
 # utility function to apply a redshift to spectral dictionary
-def apply_redshift(D,z,lamb_in,lamb_out):               # where do D, lamb_in, lamb_out come from? is z from simulated_spectra?
+def apply_redshift(D,z,lamb_in,lamb_out):
     # initialize output dictionary
     D_out = np.zeros((D.shape[0],len(lamb_out)))
 
